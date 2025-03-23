@@ -1,7 +1,5 @@
 #!/usr/bash
 
-blend_root="/home/spock-the-wizard/uss_enterprise/2025_viewopt/Dataset/blender_files"
-outpath_root="/home/spock-the-wizard/uss_enterprise/2025_viewopt/DatasetVDSF"
 blend_root="/path/to/blender/files"
 outpath_root="/path/to/dataset/root"
 num_views=25
