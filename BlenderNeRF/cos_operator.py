@@ -33,9 +33,6 @@ class CameraOnSphere(blender_nerf_operator.BlenderNeRF_Operator):
 
         # clean directory name (unsupported characters replaced) and output path
         output_dir = bpy.path.clean_name(scene.cos_dataset_name)
-        # save_path_custom = '/home/spock-the-wizard/uss_enterprise/2025_viewopt'
-        # print(save_path_custom,output_dir)
-        # output_path = os.path.join(save_path_custom, output_dir)
         output_path = os.path.join(scene.save_path, output_dir)
         os.makedirs(output_path, exist_ok=True)
 

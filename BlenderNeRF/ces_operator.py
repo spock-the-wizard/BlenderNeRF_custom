@@ -32,11 +32,6 @@ class CameraOnEvenSphere(blender_nerf_operator.BlenderNeRF_Operator):
 
         output_data = self.get_camera_intrinsics(scene, camera)
 
-        # clean directory name (unsupported characters replaced) and output path
-        # output_dir = bpy.path.clean_name(scene.ces_dataset_name)
-        # save_path_custom = '/home/spock-the-wizard/uss_enterprise/2025_viewopt'
-        # output_path = os.path.join(save_path_custom, output_dir)
-        # os.makedirs(output_path, exist_ok=True)
         output_dir = bpy.path.clean_name(scene.ces_dataset_name)
         output_path = os.path.join(scene.save_path, output_dir)
         os.makedirs(output_path, exist_ok=True)

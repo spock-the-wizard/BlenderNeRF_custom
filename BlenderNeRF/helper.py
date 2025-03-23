@@ -231,7 +231,6 @@ def set_init_props(scene):
     filepath = bpy.data.filepath
     filename = bpy.path.basename(filepath)
     default_save_path = filepath[:-len(filename)] # remove file name from blender file path = directoy path
-    # default_save_path = '/home/spock-the-wizard/uss_enterprise/2025_viewopt'
 
     # scene.save_path = default_save_path
     scene.init_frame_step = scene.frame_step
